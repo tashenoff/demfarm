@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="`ru`">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400;900&display=swap"
+          rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script defer src="https://yona.kz/assets/js/main.js"></script>
+</head>
+<body>
+<nav x-data class="navbar   bg-primary text-white">
+    <div class="container mx-auto">
+        <div class="navbar-wrap ">
+            <div class="navbar-wrap__item">
+                <div class="navbar__logo p-5">logo</div>
+                <ul class="navbar-menu leading-loose">
+                    <li class="navbar-menu__item">
+                        <a @click="$scroll('#home')" class="navbar-menu__link" href="#">О нас</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a @click="$scroll('#contact')" class="navbar-menu__link" href="#">Услуги</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a @click="$scroll('#partners')" class="navbar-menu__link" href="#">Партнеры</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a @click="$scroll('#contact')" class="navbar-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-wrap__item">
+
+                <div class="navbar-item mr-5">
+                    <a href="">
+                        +7761604911</a>
+                </div>
+
+                <div class="navbar-item">
+                    <button class="btn btn-secondary btn-regular">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="banner banner-hero bg-fixed">
+    <div class="container mx-auto">
+        <div class="banner-wrap relative z-50 p-5 ">
+            <h1 class="title title-xl py-3 text-white">Заголовок на баннер</h1>
+            <h3 class="title title-sm py-3 text-white">Обычный заголовок</h3>
+        </div>
+
+        <div class="absolute z-50 bottom-10">
+            <div class="icon icon-transparent border border-white border-opacity-20">
+                <span class="icon-arrow-b text-white text-4xl"></span>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<section id="home" class="my-20">
+    <div class="container mx-auto">
+        <div class="content">
+            <h4 class="title title-small uppercase">О компании</h4>
+            <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">ТОО дем фарм</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nam nulla numquam perspiciatis
+                quaerat sed voluptas voluptatum. Dolorem hic labore minima odit sequi? Aperiam deserunt dolorum earum
+                mollitia vel veniam, veritatis voluptas. Cupiditate harum illum minima provident quae quaerat quas
+                ratione veniam. Aliquid consequuntur hic iusto labore nesciunt! Aperiam earum enim ipsam, laudantium
+                libero natus nostrum porro possimus provident quia reprehenderit sint sunt, vel voluptate voluptatem. Ab
+                architecto beatae culpa deleniti distinctio enim eum explicabo facilis itaque molestiae mollitia non
+                omnis, praesentium quis rem, saepe voluptatem! Blanditiis consectetur consequatur, deserunt eaque enim
+                laudantium nam nisi nulla quos, sunt tempora veritatis?</p>
+        </div>
+
+    </div>
+    <section class="my-20">
+        <div class="container mx-auto">
+            <div class="content">
+                <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">Преимущества</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aut, culpa distinctio
+                    doloremque
+                    dolores est facere inventore maiores mollitia natus nesciunt officia perferendis placeat praesentium
+                    quis reiciendis sunt veritatis.</p>
+            </div>
+        </div>
+        <div class="block overflow-hidden">
+            <div class="banner top-20 relative h-screen/3 bg-primary bg-opacity-10">
+
+                <div class="container mx-auto">
+                    <div class="relative -top-20">
+                        <div class="grid relative grid-cols-3 gap-4 my-10">
+
+                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                <div class="card-body text-center">
+                                    <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <span class="icon-crown text-3xl"></span>
+                                    </div>
+                                    <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
+                                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Commodi
+                                        consectetur eaque
+                                        esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                <div class="card-body text-center">
+                                    <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <span class="icon-star text-3xl"></span>
+                                    </div>
+                                    <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
+                                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Commodi
+                                        consectetur eaque
+                                        esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                <div class="card-body text-center">
+                                    <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <span class="icon-shield text-3xl"></span>
+                                    </div>
+                                    <h4 class="card-title title-small">Lorem ipsum dolor sit amet.</h4>
+                                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Commodi
+                                        consectetur eaque
+                                        esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</section>
+<section id="partners" class="mt-10 mb-20 relative">
+    <div class="container mx-auto">
+        <div class="content">
+            <div class="flex justify-between w-full items-center">
+                <h2 class="title title-sm text-primary text-opacity-80">Наши партнеры</h2>
+
+                <div class="slider-nav__wrap flex">
+                    <div class="arrow-left mr-2">
+                        <div class="icon text-primary icon-transparent border border-primary hover:bg-primary hover:text-white border-primary  border-opacity-20">
+                            <span class="icon-arrow-l text-3xl"></span>
+                        </div>
+                    </div>
+
+                    <div class="arrow-right">
+                        <div class="icon text-primary  icon-transparent border hover:bg-primary hover:text-white border-primary border-opacity-20">
+                            <span class="icon-arrow-r text-3xl"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide p-5 ">
+                    <img class="lazy-loaded" src="https://via.placeholder.com/200x100" data-lazy-type="image"
+                         data-src="https://via.placeholder.com/150" alt="Square placeholder image 300px">
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <img class="lazy-loaded" src="https://via.placeholder.com/200x100" data-lazy-type="image"
+                         data-src="https://via.placeholder.com/150" alt="Square placeholder image 300px">
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <img class="lazy-loaded" src="https://via.placeholder.com/200x100" data-lazy-type="image"
+                         data-src="https://via.placeholder.com/150" alt="Square placeholder image 300px">
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <img class="lazy-loaded" src="https://via.placeholder.com/200x100" data-lazy-type="image"
+                         data-src="https://via.placeholder.com/150" alt="Square placeholder image 300px">
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <img class="lazy-loaded" src="https://via.placeholder.com/200x100" data-lazy-type="image"
+                         data-src="https://via.placeholder.com/150" alt="Square placeholder image 300px">
+                </div>
+                <div class="swiper-slide p-5 ">
+                    <img class="lazy-loaded" src="https://via.placeholder.com/200x100" data-lazy-type="image"
+                         data-src="https://via.placeholder.com/150" alt="Square placeholder image 300px">
+                </div>
+            </div>
+            <!--            <div class="pagination"></div>-->
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="relative top-20 ">
+
+    <div class="banner relative bg-contact w-full bg-opacity-10">
+
+        <div class="container mx-auto">
+
+            <div class="flex items-center justify-center">
+                <form class="form-block -top-20 z-50 relative group w-1/2 bg-white border border-primary"
+                      action="">
+                    <div class="form-header">
+
+                        <div class="flex items-center">
+                            <div class="icon transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
+                                <span class="icon-mail text-3xl"></span>
+                            </div>
+                            <div class="form-group">
+                                <h4 class="title title-sm font-bold text-primary">Свяжитесь с нами</h4>
+                                <span class="title-small">Наш менеджер вам перезвонит</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="label-input">Ваше имя</label>
+                        <input class="input-lg" type="text" placeholder="Алексей">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label-input">Номер телефона</label>
+                        <input class="input-lg" type="text" placeholder="+7___ __ __">
+                    </div>
+                    <div class="form-footer">
+                        <button class="btn btn-lg btn-secondary w-full">Отправить</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="bg-primary text-white p-5">
+
+        <div class="container mx-auto">
+            <div class="footer-wrap justify-between items-center flex">
+
+                <div class="flex">
+                    <div class="icon bg-black bg-opacity-40 border-white  mr-3">
+                        <span class="icon-marker text-3xl"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="pb-2">Адрес: г. Нур-Султан, ул. Толе би 40, НП-6</p>
+                        <a class="underline" target="_blank" href="https://go.2gis.com/pcho2h">Посмотреть в тугис</a>
+                    </div>
+                </div>
+
+                <div class="py-5 mr-5">
+
+                    <div class="icon icon-transparent border-white border border-opacity-30">
+                        <a x-data @click="$scroll(0)" href="#">
+                            <span class="icon-arrow-t text-3xl"></span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers/dist/scroll.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.arrow-left',
+            prevEl: '.arrow-right',
+        },
+
+        pagination: {
+            el: ".pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+
+</body>
+</html>
