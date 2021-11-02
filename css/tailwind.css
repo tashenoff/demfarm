@@ -148,7 +148,7 @@
 }
 
 .content{
-    @apply  p-5;
+    @apply  py-5 w-full;
 }
 
 .banner-hero{
