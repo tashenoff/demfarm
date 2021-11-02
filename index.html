@@ -18,50 +18,48 @@
     />
     <script defer src="https://yona.kz/assets/js/main.js"></script>
 </head>
-<body>
-<nav class="navbar text-white"
+<body  >
+<nav  class="navbar bg-primary text-white"
      x-data="{ isOpen: false }"
      @keydown.escape="isOpen = false"
-     :class="{ 'shadow-lg bg-indigo-900' : isOpen , 'bg-primary' : !isOpen}" >
+     :class="{ 'shadow-lg bg-primaryLight border-b border-white border-opacity-20' : isOpen , 'bg-primary' : !isOpen}" >
 
     <div class="container mx-auto">
         <div class="navbar-wrap ">
-            <div class="navbar-wrap__item lg:flex w-full ">
+            <div class="navbar-wrap__item">
                <div class="flex justify-between">
                 <div class="navbar__logo p-5">logo</div>
 
-                <button @click="isOpen = !isOpen"
+                <button x-cloak @click="isOpen = !isOpen"
                         type="button"
-                        class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+                        class="shadow-xl bg-white bg-opacity-5 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
                         :class="{ 'transition transform-180': isOpen }">
 
-
-                        <div class="icon text-2xl icon-close" x-show="isOpen"></div>
+                        <div class="icon text-3xl icon-close" x-show="isOpen"></div>
                         <div class="icon text-2xl icon-burger" x-show="!isOpen"></div>
-
-
 
                 </button>
                </div>
 
-                <ul class="navbar-menu leading-loose lg:flex lg:bg-transparent bg-primary lg:static absolute top-16 left-0 z-60 w-full"  :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
+                <ul x-cloak class="navbar-menu leading-loose lg:flex bg-primary lg:static absolute top-16 left-0 z-60 w-full"
+                    :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
                     @click.away="isOpen = false"
                     x-show.transition="true">
                     <li class="navbar-menu__item">
-                        <a @click="$scroll('#home')" class="navbar-menu__link" href="#">О нас</a>
+                        <a @click="$scroll('#home'), isOpen = false" class="navbar-menu__link" href="#">О нас</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a @click="$scroll('#contact')" class="navbar-menu__link" href="#">Услуги</a>
+                        <a @click="$scroll('#contact'), isOpen = false" class="navbar-menu__link" href="#">Услуги</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a @click="$scroll('#partners')" class="navbar-menu__link" href="#">Партнеры</a>
+                        <a @click="$scroll('#partners'), isOpen = false" class="navbar-menu__link" href="#">Партнеры</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a @click="$scroll('#contact')" class="navbar-menu__link" href="#">Контакты</a>
+                        <a @click="$scroll('#contact'), isOpen = false" class="navbar-menu__link" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
-            <div class="navbar-wrap__item--phone">
+            <div class="navbar-wrap__item hidden justify-end">
 
                 <div class="navbar-item mr-5">
                     <a href="">
@@ -78,7 +76,7 @@
 
 <div class="banner banner-hero bg-fixed">
     <div class="container mx-auto">
-        <div class="banner-wrap relative z-50 p-5 ">
+        <div class="banner-wrap relative z-40 p-5 ">
             <h1 class="title title-xl py-3 text-white">Заголовок на баннер</h1>
             <h3 class="title title-sm py-3 text-white">Обычный заголовок</h3>
         </div>

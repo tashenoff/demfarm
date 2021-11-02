@@ -118,19 +118,16 @@
 }
 
 .navbar-wrap__item{
-    @apply lg:flex items-center relative;
+    @apply lg:flex items-center relative w-full;
 }
 
-.navbar-wrap__item--phone{
-    @apply lg:flex hidden items-center justify-end w-full;
-}
 
 .navbar-menu{
     @apply lg:flex flex-1 lg:bg-transparent bg-primary lg:block absolute top-16 left-0 z-50 w-full;
 }
 
 .navbar-menu__item{
-    @apply p-5 hover:bg-white hover:bg-opacity-10;
+    @apply p-5 hover:bg-white hover:bg-opacity-10 lg:border-none border border-white border-opacity-5;
 }
 
 .navbar-menu__link{
