@@ -136,11 +136,11 @@
 }
 
 .navbar-menu__item{
-    @apply p-5 hover:bg-white hover:bg-opacity-10 lg:border-none border border-white border-opacity-5;
+    @apply  lg:border-none border border-white border-opacity-5;
 }
 
 .navbar-menu__link{
-    @apply font-medium;
+    @apply p-5  font-medium;
 }
 
 .content{
