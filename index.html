@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400;900&display=swap"
-          rel="stylesheet">
+          rel="preconnect " as="font">
     <link
             rel="stylesheet"
             href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -76,7 +76,7 @@
 
 <div class="banner banner-hero bg-fixed">
     <div class="container mx-auto">
-        <div class="content">
+        <div class="row">
             <div class="relative z-50">
                 <h1 class="title title-xl py-3 text-white">Заголовок на баннер</h1>
                 <h3 class="title title-sm py-3 text-white">Обычный заголовок</h3>
@@ -100,7 +100,7 @@
 
 <section id="home" class="my-20">
     <div class="container mx-auto">
-        <div class="content">
+        <div class="row">
             <h4 class="title title-small uppercase">О компании</h4>
             <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">ТОО дем фарм</h2>
             <p class="text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nam nulla
@@ -117,7 +117,7 @@
     </div>
     <section class="my-20">
         <div class="container mx-auto">
-            <div class="content">
+            <div class="row">
                 <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">Преимущества</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aut, culpa distinctio
                     doloremque
@@ -129,7 +129,7 @@
             <div class="banner top-20 relative lg:h-screen/3 bg-primary bg-opacity-10">
 
                 <div class="container mx-auto">
-                    <div class="content">
+                    <div class="row">
                         <div class="lg:relative -top-20">
                             <div class="grid relative lg:grid-cols-3 grid-cols-1 gap-4 lg:my-10">
 
@@ -190,7 +190,7 @@
 </section>
 <section id="partners" class="mt-10 mb-20 lg:relative">
     <div class="container mx-auto">
-        <div class="content">
+        <div class="row">
             <div class="flex justify-between w-full items-center">
                 <h2 class="title title-sm text-primary text-opacity-80">Наши партнеры</h2>
 
@@ -247,10 +247,10 @@
 
     <div class="banner lg:relative bg-contact  bg-opacity-10">
         <div class="contact-inner w-full">
-        <div class="content ">
-            <div class="container mx-auto">
 
-                <div class="flex items-center justify-center">
+            <div class="container mx-auto">
+                <div class="row ">
+                <div class="flex w-full items-center justify-center">
                     <form class="form-block -top-20 z-50 relative group lg:w-1/2 bg-white border border-primary"
                           action="">
                         <div class="form-header">
@@ -338,11 +338,11 @@
             },
             768: {
                 slidesPerView: 4,
-                spaceBetween: 40,
+                spaceBetween: 10,
             },
             1024: {
                 slidesPerView: 5,
-                spaceBetween: 50,
+                spaceBetween: 10,
             },
         },
 

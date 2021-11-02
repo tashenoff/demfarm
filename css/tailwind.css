@@ -130,6 +130,10 @@
     @apply lg:flex items-center relative w-full;
 }
 
+.row{
+    @apply flex flex-wrap mx-5;
+}
+
 
 .navbar-menu{
     @apply lg:flex flex-1 lg:bg-transparent lg:static absolute top-16 left-0 z-60 w-full ;
