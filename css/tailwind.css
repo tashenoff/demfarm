@@ -16,7 +16,7 @@
     @apply text-xl  tracking-tight;
 }
 .title-sm{
-    @apply lg:text-3xl text-2xl;
+    @apply lg:text-3xl text-lg;
 }
 
 .title-lg{
@@ -110,7 +110,7 @@
 }
 
 .navbar{
-
+@apply w-full z-60;
 }
 
 .navbar-wrap{
@@ -123,7 +123,7 @@
 
 
 .navbar-menu{
-    @apply lg:flex flex-1 lg:bg-transparent bg-primary lg:block absolute top-16 left-0 z-50 w-full;
+    @apply lg:flex flex-1 lg:bg-transparent lg:static absolute top-16 left-0 z-60 w-full ;
 }
 
 .navbar-menu__item{
@@ -139,9 +139,14 @@
 }
 
 .banner-hero{
-    @apply relative h-screen/2;
+    @apply relative lg:h-screen/2 h-screen;
 }
 
 .banner{
     @apply flex flex-col justify-center items-start;
 }
+
+
+
+.banner-wrap{
+    @apply relative w-full h-full}
