@@ -35,8 +35,8 @@
                             class="shadow-xl bg-white bg-opacity-5 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
                             :class="{ 'transition transform-180': isOpen }">
 
-                        <div class="icon text-3xl icon-close" x-show="isOpen"></div>
-                        <div class="icon text-2xl icon-burger" x-show="!isOpen"></div>
+                        <div class="icon icon-lg text-3xl icon-close" x-show="isOpen"></div>
+                        <div class="icon icon-lg text-2xl icon-burger" x-show="!isOpen"></div>
 
                     </button>
                 </div>
@@ -85,7 +85,7 @@
 
             <div x-data class="absolute z-50 bottom-10">
                 <a @click="$scroll('#home')" href="#" class="cursor-pointer hover:outline-none ">
-                    <div class="icon animate-bounce icon-transparent border border-white border-opacity-20">
+                    <div class="icon icon-lg animate-bounce icon-transparent border border-white border-opacity-20">
 
                         <span class="icon-arrow-b text-white text-4xl"></span>
 
@@ -135,7 +135,7 @@
 
                                 <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
                                     <div class="card-body text-center">
-                                        <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
                                             <span class="icon-crown text-3xl"></span>
                                         </div>
                                         <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
@@ -150,7 +150,7 @@
 
                                 <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
                                     <div class="card-body text-center">
-                                        <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
                                             <span class="icon-star text-3xl"></span>
                                         </div>
                                         <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
@@ -165,7 +165,7 @@
 
                                 <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
                                     <div class="card-body text-center">
-                                        <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
                                             <span class="icon-shield text-3xl"></span>
                                         </div>
                                         <h4 class="card-title title-small">Lorem ipsum dolor sit amet.</h4>
@@ -196,14 +196,14 @@
 
                 <div class="slider-nav__wrap flex">
                     <div class="arrow-left mr-2">
-                        <div class="icon text-primary icon-transparent border border-primary hover:bg-primary hover:text-white border-primary  border-opacity-20">
-                            <span class="icon-arrow-l text-3xl"></span>
+                        <div class="icon icon-sm text-primary icon-transparent border border-primary hover:bg-primary hover:text-white border-primary  border-opacity-20">
+                            <span class="icon-arrow-l text-2xl"></span>
                         </div>
                     </div>
 
                     <div class="arrow-right">
-                        <div class="icon text-primary  icon-transparent border hover:bg-primary hover:text-white border-primary border-opacity-20">
-                            <span class="icon-arrow-r text-3xl"></span>
+                        <div class="icon icon-sm text-primary  icon-transparent border hover:bg-primary hover:text-white border-primary border-opacity-20">
+                            <span class="icon-arrow-r text-2xl"></span>
                         </div>
                     </div>
                 </div>
@@ -256,8 +256,10 @@
                         <div class="form-header">
 
                             <div class="flex items-center">
-                                <div class="icon transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
-                                    <span class="icon-mail text-3xl"></span>
+                                <div>
+                                <div class="icon icon-sm transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
+                                    <span class="icon-mail text-2xl"></span>
+                                </div>
                                 </div>
                                 <div class="form-group">
                                     <h4 class="title title-sm font-bold text-primary">Свяжитесь с нами</h4>
@@ -291,8 +293,8 @@
             <div class="footer-wrap justify-between items-center flex">
 
                 <div class="flex">
-                    <div class="icon bg-black bg-opacity-40 border-white  mr-3">
-                        <span class="icon-marker text-3xl"></span>
+                    <div class="icon icon-sm bg-black bg-opacity-40 border-white  mr-3">
+                        <span class="icon-marker text-2xl"></span>
                     </div>
                     <div class="flex flex-col">
                         <p class="pb-2">Адрес: г. Нур-Султан, ул. Толе би 40, НП-6</p>
@@ -302,9 +304,9 @@
 
                 <div class="py-5 mr-5">
 
-                    <div class="icon icon-transparent border-white border border-opacity-30">
+                    <div class="icon icon-sm icon-transparent border-white border border-opacity-30">
                         <a x-data @click="$scroll(0)" href="#">
-                            <span class="icon-arrow-t text-3xl"></span>
+                            <span class="icon-arrow-t text-2xl"></span>
                         </a>
                     </div>
 
