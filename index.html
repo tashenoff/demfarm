@@ -19,12 +19,34 @@
     <script defer src="https://yona.kz/assets/js/main.js"></script>
 </head>
 <body>
-<nav x-data class="navbar   bg-primary text-white">
+<nav class="navbar text-white"
+     x-data="{ isOpen: false }"
+     @keydown.escape="isOpen = false"
+     :class="{ 'shadow-lg bg-indigo-900' : isOpen , 'bg-primary' : !isOpen}" >
+
     <div class="container mx-auto">
         <div class="navbar-wrap ">
-            <div class="navbar-wrap__item">
+            <div class="navbar-wrap__item lg:flex w-full ">
+               <div class="flex justify-between">
                 <div class="navbar__logo p-5">logo</div>
-                <ul class="navbar-menu leading-loose">
+
+                <button @click="isOpen = !isOpen"
+                        type="button"
+                        class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+                        :class="{ 'transition transform-180': isOpen }">
+
+
+                        <div class="icon text-2xl icon-close" x-show="isOpen"></div>
+                        <div class="icon text-2xl icon-burger" x-show="!isOpen"></div>
+
+
+
+                </button>
+               </div>
+
+                <ul class="navbar-menu leading-loose lg:flex lg:bg-transparent bg-primary lg:static absolute top-16 left-0 z-60 w-full"  :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
+                    @click.away="isOpen = false"
+                    x-show.transition="true">
                     <li class="navbar-menu__item">
                         <a @click="$scroll('#home')" class="navbar-menu__link" href="#">О нас</a>
                     </li>
@@ -39,7 +61,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="navbar-wrap__item">
+            <div class="navbar-wrap__item--phone">
 
                 <div class="navbar-item mr-5">
                     <a href="">
@@ -77,7 +99,7 @@
         <div class="content">
             <h4 class="title title-small uppercase">О компании</h4>
             <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">ТОО дем фарм</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nam nulla numquam perspiciatis
+            <p class="text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nam nulla numquam perspiciatis
                 quaerat sed voluptas voluptatum. Dolorem hic labore minima odit sequi? Aperiam deserunt dolorum earum
                 mollitia vel veniam, veritatis voluptas. Cupiditate harum illum minima provident quae quaerat quas
                 ratione veniam. Aliquid consequuntur hic iusto labore nesciunt! Aperiam earum enim ipsam, laudantium
@@ -98,12 +120,12 @@
                     quis reiciendis sunt veritatis.</p>
             </div>
         </div>
-        <div class="block overflow-hidden">
-            <div class="banner top-20 relative h-screen/3 bg-primary bg-opacity-10">
+        <div class="block lg:overflow-hidden">
+            <div class="banner top-20 relative lg:h-screen/3 bg-primary bg-opacity-10">
 
                 <div class="container mx-auto">
-                    <div class="relative -top-20">
-                        <div class="grid relative grid-cols-3 gap-4 my-10">
+                    <div class="lg:relative -top-20">
+                        <div class="grid relative lg:grid-cols-3 grid-cols-1 gap-4 lg:my-10">
 
                             <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
                                 <div class="card-body text-center">
@@ -159,7 +181,7 @@
 
 
 </section>
-<section id="partners" class="mt-10 mb-20 relative">
+<section id="partners" class="mt-10 mb-20 lg:relative">
     <div class="container mx-auto">
         <div class="content">
             <div class="flex justify-between w-full items-center">
@@ -214,14 +236,14 @@
 </section>
 
 
-<section id="contact" class="relative top-20 ">
+<section id="contact" class="lg:relative top-20 ">
 
-    <div class="banner relative bg-contact w-full bg-opacity-10">
+    <div class="banner lg:relative bg-contact w-full bg-opacity-10">
 
         <div class="container mx-auto">
 
             <div class="flex items-center justify-center">
-                <form class="form-block -top-20 z-50 relative group w-1/2 bg-white border border-primary"
+                <form class="form-block -top-20 z-50 relative group lg:w-1/2 bg-white border border-primary"
                       action="">
                     <div class="form-header">
 
@@ -295,8 +317,23 @@
         spaceBetween: 10,
         loop: true,
         navigation: {
-            nextEl: '.arrow-left',
-            prevEl: '.arrow-right',
+            nextEl: '.arrow-right',
+            prevEl: '.arrow-left',
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 5,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
         },
 
         pagination: {

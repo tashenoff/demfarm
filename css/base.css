@@ -178,4 +178,4 @@ display: block;
     position: relative!important;
 }
 
-
+[x-cloak] { display: none !important; }
