@@ -160,7 +160,7 @@ h3, h4, h5, h6,  button, nav{
 }
 
 
-.bg-contact:before{
+.contact-inner:before{
     position: absolute;
     background: rgb(28 58 128 / 73%);
     z-index: 40;

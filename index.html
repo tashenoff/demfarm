@@ -18,28 +18,28 @@
     />
     <script type="text/javascript" src="js/main.js" defer></script>
 </head>
-<body  >
-<nav  class="navbar w-full fixed z-60 bg-primary text-white"
+<body>
+<nav class="navbar w-full fixed z-60 bg-primary text-white"
      x-data="{ isOpen: false }"
      @keydown.escape="isOpen = false"
-     :class="{ 'shadow-lg bg-primary border-b border-white border-opacity-20' : isOpen , 'bg-primary' : !isOpen}" >
+     :class="{ 'shadow-lg bg-primary border-b border-white border-opacity-20' : isOpen , 'bg-primary' : !isOpen}">
 
     <div class="container mx-auto">
         <div class="navbar-wrap ">
             <div class="navbar-wrap__item">
-               <div class="flex justify-between">
-                <div class="navbar__logo p-5">Demfarm</div>
+                <div class="flex justify-between">
+                    <div class="navbar__logo p-5">Demfarm</div>
 
-                <button x-cloak @click="isOpen = !isOpen"
-                        type="button"
-                        class="shadow-xl bg-white bg-opacity-5 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
-                        :class="{ 'transition transform-180': isOpen }">
+                    <button x-cloak @click="isOpen = !isOpen"
+                            type="button"
+                            class="shadow-xl bg-white bg-opacity-5 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+                            :class="{ 'transition transform-180': isOpen }">
 
                         <div class="icon text-3xl icon-close" x-show="isOpen"></div>
                         <div class="icon text-2xl icon-burger" x-show="!isOpen"></div>
 
-                </button>
-               </div>
+                    </button>
+                </div>
 
                 <ul x-cloak class="navbar-menu leading-loose bg-primary "
                     :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
@@ -77,24 +77,23 @@
 <div class="banner banner-hero bg-fixed">
     <div class="container mx-auto">
         <div class="content">
-        <div class="relative z-50">
-            <h1 class="title title-xl py-3 text-white">Заголовок на баннер</h1>
-            <h3 class="title title-sm py-3 text-white">Обычный заголовок</h3>
-
-        </div>
-
-        <div x-data class="absolute z-50 bottom-10">
-            <a @click="$scroll('#home')" href="#" class="">
-            <div class="icon animate-bounce icon-transparent border border-white border-opacity-20">
-
-                <span class="icon-arrow-b text-white text-4xl"></span>
+            <div class="relative z-50">
+                <h1 class="title title-xl py-3 text-white">Заголовок на баннер</h1>
+                <h3 class="title title-sm py-3 text-white">Обычный заголовок</h3>
 
             </div>
-            </a>
-        </div>
+
+            <div x-data class="absolute z-50 bottom-10">
+                <a @click="$scroll('#home')" href="#" class="cursor-pointer hover:outline-none ">
+                    <div class="icon animate-bounce icon-transparent border border-white border-opacity-20">
+
+                        <span class="icon-arrow-b text-white text-4xl"></span>
+
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-
 
 
 </div>
@@ -104,7 +103,8 @@
         <div class="content">
             <h4 class="title title-small uppercase">О компании</h4>
             <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">ТОО дем фарм</h2>
-            <p class="text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nam nulla numquam perspiciatis
+            <p class="text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nam nulla
+                numquam perspiciatis
                 quaerat sed voluptas voluptatum. Dolorem hic labore minima odit sequi? Aperiam deserunt dolorum earum
                 mollitia vel veniam, veritatis voluptas. Cupiditate harum illum minima provident quae quaerat quas
                 ratione veniam. Aliquid consequuntur hic iusto labore nesciunt! Aperiam earum enim ipsam, laudantium
@@ -129,54 +129,56 @@
             <div class="banner top-20 relative lg:h-screen/3 bg-primary bg-opacity-10">
 
                 <div class="container mx-auto">
-                    <div class="lg:relative -top-20">
-                        <div class="grid relative lg:grid-cols-3 grid-cols-1 gap-4 lg:my-10">
+                    <div class="content">
+                        <div class="lg:relative -top-20">
+                            <div class="grid relative lg:grid-cols-3 grid-cols-1 gap-4 lg:my-10">
 
-                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
-                                <div class="card-body text-center">
-                                    <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                        <span class="icon-crown text-3xl"></span>
-                                    </div>
-                                    <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
-                                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Commodi
-                                        consectetur eaque
-                                        esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
-                                <div class="card-body text-center">
-                                    <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                        <span class="icon-star text-3xl"></span>
-                                    </div>
-                                    <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
-                                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Commodi
-                                        consectetur eaque
-                                        esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                    <div class="card-body text-center">
+                                        <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                            <span class="icon-crown text-3xl"></span>
+                                        </div>
+                                        <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
+                                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Commodi
+                                            consectetur eaque
+                                            esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
 
-                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
-                                <div class="card-body text-center">
-                                    <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                        <span class="icon-shield text-3xl"></span>
-                                    </div>
-                                    <h4 class="card-title title-small">Lorem ipsum dolor sit amet.</h4>
-                                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Commodi
-                                        consectetur eaque
-                                        esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                    <div class="card-body text-center">
+                                        <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                            <span class="icon-star text-3xl"></span>
+                                        </div>
+                                        <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
+                                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Commodi
+                                            consectetur eaque
+                                            esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                        </div>
                                     </div>
                                 </div>
+
+
+                                <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                    <div class="card-body text-center">
+                                        <div class="icon transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                            <span class="icon-shield text-3xl"></span>
+                                        </div>
+                                        <h4 class="card-title title-small">Lorem ipsum dolor sit amet.</h4>
+                                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Commodi
+                                            consectetur eaque
+                                            esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -244,42 +246,43 @@
 <section id="contact" class="lg:relative top-20 ">
 
     <div class="banner lg:relative bg-contact  bg-opacity-10">
-<div class="content w-full">
-        <div class="container mx-auto">
+        <div class="contact-inner w-full">
+        <div class="content ">
+            <div class="container mx-auto">
 
-            <div class="flex items-center justify-center">
-                <form class="form-block -top-20 z-50 relative group lg:w-1/2 bg-white border border-primary"
-                      action="">
-                    <div class="form-header">
+                <div class="flex items-center justify-center">
+                    <form class="form-block -top-20 z-50 relative group lg:w-1/2 bg-white border border-primary"
+                          action="">
+                        <div class="form-header">
 
-                        <div class="flex items-center">
-                            <div class="icon transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
-                                <span class="icon-mail text-3xl"></span>
+                            <div class="flex items-center">
+                                <div class="icon transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
+                                    <span class="icon-mail text-3xl"></span>
+                                </div>
+                                <div class="form-group">
+                                    <h4 class="title title-sm font-bold text-primary">Свяжитесь с нами</h4>
+                                    <span class="title-small">Наш менеджер вам перезвонит</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <h4 class="title title-sm font-bold text-primary">Свяжитесь с нами</h4>
-                                <span class="title-small">Наш менеджер вам перезвонит</span>
-                            </div>
+
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="label-input">Ваше имя</label>
+                            <input class="input-lg" type="text" placeholder="Алексей">
                         </div>
 
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="label-input">Ваше имя</label>
-                        <input class="input-lg" type="text" placeholder="Алексей">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="label-input">Номер телефона</label>
-                        <input class="input-lg" type="text" placeholder="+7___ __ __">
-                    </div>
-                    <div class="form-footer">
-                        <button class="btn btn-lg btn-secondary w-full">Отправить</button>
-                    </div>
-                </form>
+                        <div class="form-group">
+                            <label class="label-input">Номер телефона</label>
+                            <input class="input-lg" type="text" placeholder="+7___ __ __">
+                        </div>
+                        <div class="form-footer">
+                            <button class="btn btn-lg btn-secondary w-full">Отправить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         </div>
-
     </div>
 
     <footer class="bg-primary text-white p-5 z-50 relative">
