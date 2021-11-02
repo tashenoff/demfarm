@@ -30,7 +30,7 @@
                 <div class="flex justify-between">
                     <div class="navbar__logo p-5">Demfarm</div>
 
-                    <button x-cloak @click="isOpen = !isOpen"
+                    <button aria-label="menu" x-cloak @click="isOpen = !isOpen"
                             type="button"
                             class="shadow-xl bg-white bg-opacity-5 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
                             :class="{ 'transition transform-180': isOpen }">
@@ -84,7 +84,8 @@
             </div>
 
             <div x-data class="absolute z-50 bottom-10">
-                <a @click="$scroll('#home')" href="#" class="cursor-pointer hover:outline-none ">
+                <a aria-label="scroll bottom" @click="$scroll('#home')" href="#"
+                   class="cursor-pointer hover:outline-none ">
                     <div class="icon icon-lg animate-bounce icon-transparent border border-white border-opacity-20">
 
                         <span class="icon-arrow-b text-white text-4xl"></span>
@@ -101,17 +102,28 @@
 <section id="home" class="my-20">
     <div class="container mx-auto">
         <div class="row">
-            <h4 class="title title-small uppercase">О компании</h4>
-            <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">ТОО дем фарм</h2>
-            <p class="text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nam nulla
-                numquam perspiciatis
-                quaerat sed voluptas voluptatum. Dolorem hic labore minima odit sequi? Aperiam deserunt dolorum earum
-                mollitia vel veniam, veritatis voluptas. Cupiditate harum illum minima provident quae quaerat quas
-                ratione veniam. Aliquid consequuntur hic iusto labore nesciunt! Aperiam earum enim ipsam, laudantium
-                libero natus nostrum porro possimus provident quia reprehenderit sint sunt, vel voluptate voluptatem. Ab
-                architecto beatae culpa deleniti distinctio enim eum explicabo facilis itaque molestiae mollitia non
-                omnis, praesentium quis rem, saepe voluptatem! Blanditiis consectetur consequatur, deserunt eaque enim
-                laudantium nam nisi nulla quos, sunt tempora veritatis?</p>
+            <div class="flex-1">
+                <h4 class="title title-small uppercase">О компании</h4>
+                <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">ТОО дем фарм</h2>
+            </div>
+            <p class="text-gray-100">
+                Товарищи! сложившаяся структура организации играет важную роль в формировании дальнейших направлений
+                развития. Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас
+                анализа форм развития. С другой стороны постоянный количественный рост и сфера нашей активности
+                способствует подготовки и реализации новых предложений.
+
+                Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные
+                задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Идейные
+                соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей
+                деятельности требуют от нас анализа новых предложений. Идейные соображения высшего порядка, а также
+                сложившаяся структура организации играет важную роль в формировании системы обучения кадров,
+                соответствует насущным потребностям. Равным образом реализация намеченных плановых заданий влечет за
+                собой процесс внедрения и модернизации существенных финансовых и административных условий. Не следует,
+                однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за
+                собой процесс внедрения и модернизации дальнейших направлений развития. Задача организации, в
+                особенности же сложившаяся структура организации способствует подготовки и реализации дальнейших
+                направлений развития.
+            </p>
         </div>
 
     </div>
@@ -138,51 +150,48 @@
                                         <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
                                             <span class="icon-crown text-3xl"></span>
                                         </div>
-                                        <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
-                                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Commodi
-                                            consectetur eaque
-                                            esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
-                                        </div>
-                                    </div>
+                                        <h3 class="card-title title-small">Заголовок</h3>
+                                        <p class="card-text">Равным образом постоянный количественный рост
+                                            и сфера нашей активности позволяет выполнять важные задания по разработке
+                                            соответствующий условий активизации.
+                                        </p>
                                 </div>
-
-
-                                <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
-                                    <div class="card-body text-center">
-                                        <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                            <span class="icon-star text-3xl"></span>
-                                        </div>
-                                        <h3 class="card-title title-small">Lorem ipsum dolor sit amet.</h3>
-                                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Commodi
-                                            consectetur eaque
-                                            esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
-                                    <div class="card-body text-center">
-                                        <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                            <span class="icon-shield text-3xl"></span>
-                                        </div>
-                                        <h4 class="card-title title-small">Lorem ipsum dolor sit amet.</h4>
-                                        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Commodi
-                                            consectetur eaque
-                                            esse nisi nostrum pariatur reiciendis reprehenderit tenetur voluptates!
-                                        </div>
-                                    </div>
-                                </div>
-
-
                             </div>
+
+
+                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                <div class="card-body text-center">
+                                    <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <span class="icon-star text-3xl"></span>
+                                    </div>
+                                    <h3 class="card-title title-small">Заголовок</h3>
+                                    <p class="card-text">Равным образом постоянный количественный рост
+                                        и сфера нашей активности позволяет выполнять важные задания по разработке
+                                        соответствующий условий активизации.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                <div class="card-body text-center">
+                                    <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
+                                        <span class="icon-shield text-3xl"></span>
+                                    </div>
+                                    <h3 class="card-title title-small">Заголовок</h3>
+                                    <p class="card-text">Равным образом постоянный количественный рост
+                                        и сфера нашей активности позволяет выполнять важные задания по разработке
+                                        соответствующий условий активизации.
+                                    </p>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -250,40 +259,40 @@
 
             <div class="container mx-auto">
                 <div class="row ">
-                <div class="flex w-full items-center justify-center">
-                    <form class="form-block -top-20 z-50 relative group lg:w-1/2 bg-white border border-primary"
-                          action="">
-                        <div class="form-header">
+                    <div class="flex w-full items-center justify-center">
+                        <form class="form-block -top-20 z-50 relative group lg:w-1/2 bg-white border border-primary"
+                              action="">
+                            <div class="form-header">
 
-                            <div class="flex items-center">
-                                <div>
-                                <div class="icon icon-sm transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
-                                    <span class="icon-mail text-2xl"></span>
+                                <div class="flex items-center">
+                                    <div>
+                                        <div class="icon icon-sm transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
+                                            <span class="icon-mail text-2xl"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h4 class="title title-sm font-bold text-primary">Свяжитесь с нами</h4>
+                                        <span class="title-small">Наш менеджер вам перезвонит</span>
+                                    </div>
                                 </div>
-                                </div>
-                                <div class="form-group">
-                                    <h4 class="title title-sm font-bold text-primary">Свяжитесь с нами</h4>
-                                    <span class="title-small">Наш менеджер вам перезвонит</span>
-                                </div>
+
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="label-input">Ваше имя</label>
+                                <input class="input-lg" type="text" placeholder="Алексей">
                             </div>
 
-                        </div>
-                        <div class="form-group mb-3">
-                            <label class="label-input">Ваше имя</label>
-                            <input class="input-lg" type="text" placeholder="Алексей">
-                        </div>
-
-                        <div class="form-group">
-                            <label class="label-input">Номер телефона</label>
-                            <input class="input-lg" type="text" placeholder="+7___ __ __">
-                        </div>
-                        <div class="form-footer">
-                            <button class="btn btn-lg btn-secondary w-full">Отправить</button>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <label class="label-input">Номер телефона</label>
+                                <input class="input-lg" type="text" placeholder="+7___ __ __">
+                            </div>
+                            <div class="form-footer">
+                                <button class="btn btn-lg btn-secondary w-full">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 
@@ -298,7 +307,7 @@
                     </div>
                     <div class="flex flex-col">
                         <p class="pb-2">Адрес: г. Нур-Султан, ул. Толе би 40, НП-6</p>
-                        <a class="underline" target="_blank" href="https://go.2gis.com/pcho2h">Посмотреть в тугис</a>
+                        <a rel="nofollow" class="underline" target="_blank" href="https://go.2gis.com/pcho2h">Посмотреть в тугис</a>
                     </div>
                 </div>
 
