@@ -85,17 +85,9 @@
                 <h3 class="title title-sm py-3 text-white">Обычный заголовок</h3>
 
             </div>
-
-            <div x-data class="absolute z-50 bottom-10">
-                <a aria-label="scroll bottom" @click="$scroll('#home')" href="#"
-                   class="cursor-pointer hover:outline-none ">
-                    <div class="icon icon-lg animate-bounce icon-transparent border border-white border-opacity-20">
-
-                        <span class="icon-arrow-b text-white text-4xl"></span>
-
-                    </div>
-                </a>
-            </div>
+            <a aria-label="scroll bottom" x-data @click="$scroll('#home')" href="#"
+               class="icon icon-lg icon-arrow-b text-white text-4xl animate-bounce icon-transparent icon-hero">
+            </a>
         </div>
     </div>
 
@@ -134,7 +126,7 @@
         <div class="container mx-auto">
             <div class="row">
                 <h2 class="title title-sm py-3 mb-5 text-primary text-opacity-80">Преимущества</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aut, culpa distinctio
+                <p class="mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aut, culpa distinctio
                     doloremque
                     dolores est facere inventore maiores mollitia natus nesciunt officia perferendis placeat praesentium
                     quis reiciendis sunt veritatis.</p>
@@ -150,51 +142,45 @@
 
                                 <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
                                     <div class="card-body text-center">
-                                        <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                            <span class="icon-crown text-3xl"></span>
-                                        </div>
+                                        <span class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4 icon-crown text-3xl"></span>
                                         <h3 class="card-title title-small">Заголовок</h3>
                                         <p class="card-text">Равным образом постоянный количественный рост
                                             и сфера нашей активности позволяет выполнять важные задания по разработке
                                             соответствующий условий активизации.
                                         </p>
-                                </div>
-                            </div>
-
-
-                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
-                                <div class="card-body text-center">
-                                    <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                        <span class="icon-star text-3xl"></span>
                                     </div>
-                                    <h3 class="card-title title-small">Заголовок</h3>
-                                    <p class="card-text">Равным образом постоянный количественный рост
-                                        и сфера нашей активности позволяет выполнять важные задания по разработке
-                                        соответствующий условий активизации.
-                                    </p>
                                 </div>
-                            </div>
 
 
-                            <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
-                                <div class="card-body text-center">
-                                    <div class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4">
-                                        <span class="icon-shield text-3xl"></span>
+                                <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                    <div class="card-body text-center">
+                                        <span class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4 icon-star text-3xl"></span>
+                                        <h3 class="card-title title-small">Заголовок</h3>
+                                        <p class="card-text">Равным образом постоянный количественный рост
+                                            и сфера нашей активности позволяет выполнять важные задания по разработке
+                                            соответствующий условий активизации.
+                                        </p>
                                     </div>
-                                    <h3 class="card-title title-small">Заголовок</h3>
-                                    <p class="card-text">Равным образом постоянный количественный рост
-                                        и сфера нашей активности позволяет выполнять важные задания по разработке
-                                        соответствующий условий активизации.
-                                    </p>
                                 </div>
+
+
+                                <div class="card bg-white group transition-all duration-150 hover:shadow-lg">
+                                    <div class="card-body text-center">
+                                        <span class="icon icon-lg transition-all duration-300 group-hover:bg-secondary icon-primary my-4 icon-shield text-3xl"></span>
+                                        <h3 class="card-title title-small">Заголовок</h3>
+                                        <p class="card-text">Равным образом постоянный количественный рост
+                                            и сфера нашей активности позволяет выполнять важные задания по разработке
+                                            соответствующий условий активизации.
+                                        </p>
+                                    </div>
+                                </div>
+
+
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -204,23 +190,19 @@
     <div class="container mx-auto">
         <div class="row">
             <div class="content">
-            <div class="flex justify-between w-full items-center">
-                <h2 class="title title-sm text-primary text-opacity-80">Наши партнеры</h2>
+                <div class="flex justify-between w-full items-center">
+                    <h2 class="title title-sm text-primary text-opacity-80">Наши партнеры</h2>
 
-                <div class="slider-nav__wrap flex">
-                    <div class="arrow-left mr-2">
-                        <div class="icon icon-sm text-primary icon-transparent border border-primary hover:bg-primary hover:text-white border-primary  border-opacity-20">
-                            <span class="icon-arrow-l text-2xl"></span>
-                        </div>
-                    </div>
+                    <div class="slider-nav__wrap flex">
 
-                    <div class="arrow-right">
-                        <div class="icon icon-sm text-primary  icon-transparent border hover:bg-primary hover:text-white border-primary border-opacity-20">
-                            <span class="icon-arrow-r text-2xl"></span>
-                        </div>
+                        <a role="button" href="#" class="arrow-left mr-2 icon icon-sm text-primary icon-transparent border border-primary hover:bg-primary hover:text-white border-primary  border-opacity-20 icon-arrow-l text-2xl">
+                        </a>
+
+                        <a role="button" href="#"
+                           class="arrow-right icon-arrow-r text-2xl icon icon-sm text-primary  icon-transparent border hover:bg-primary hover:text-white border-primary border-opacity-20">
+                        </a>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
         <!-- Swiper -->
@@ -270,11 +252,11 @@
                             <div class="form-header">
 
                                 <div class="flex items-center">
+
                                     <div>
-                                        <div class="icon icon-sm transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5">
-                                            <span class="icon-mail text-2xl"></span>
-                                        </div>
+                                        <span class="icon icon-sm transition-all duration-300 group-hover:bg-secondary group-hover:text-white icon-gray my-4 mr-5 icon-mail text-2xl"></span>
                                     </div>
+
                                     <div class="form-group">
                                         <h4 class="title title-sm font-bold text-primary">Свяжитесь с нами</h4>
                                         <span class="title-small">Наш менеджер вам перезвонит</span>
@@ -307,20 +289,21 @@
             <div class="footer-wrap justify-between items-center flex">
 
                 <div class="flex">
-                    <div class="icon icon-sm bg-black bg-opacity-40 border-white  mr-3">
-                        <span class="icon-marker text-2xl"></span>
+                    <div>
+                        <span class="icon icon-sm bg-black bg-opacity-40 border-white  mr-3 icon-marker text-2xl"></span>
                     </div>
                     <div class="flex flex-col">
                         <p class="pb-2">Адрес: г. Нур-Султан, ул. Толе би 40, НП-6</p>
-                        <a rel="noopener nofollow" class="underline" target="_blank" href="https://go.2gis.com/pcho2h">Посмотреть в тугис</a>
+                        <a rel="noopener nofollow" class="underline" target="_blank" href="https://go.2gis.com/pcho2h">Посмотреть
+                            в тугис</a>
                     </div>
                 </div>
 
                 <div class="py-5 mr-5">
 
-                    <div class="icon icon-sm icon-transparent border-white border border-opacity-30">
-                        <a x-data @click="$scroll(0)" href="#">
-                            <span class="icon-arrow-t text-2xl"></span>
+                    <div class="">
+                        <a class="icon icon-sm icon-transparent border-white border border-opacity-30 icon-arrow-t text-2xl"
+                           x-data @click="$scroll(0)" href="#">
                         </a>
                     </div>
 

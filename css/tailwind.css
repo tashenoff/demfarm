@@ -147,6 +147,11 @@
     @apply p-5  font-medium;
 }
 
+.icon-hero{
+    @apply absolute z-50 bottom-10 border border-white border-opacity-20;
+
+}
+
 .content{
     @apply  py-5 w-full;
 }

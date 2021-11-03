@@ -23,7 +23,7 @@
         <div class="navbar-wrap ">
             <div class="navbar-wrap__item">
                 <div class="flex justify-between">
-                    <div class="navbar__logo p-5">navbar</div>
+                    <div class="navbar__logo p-5">Easy Kit</div>
 
                     <button x-cloak @click="isOpen = !isOpen"
                             type="button"
@@ -78,6 +78,12 @@
         <h3 class="title text-white title-sm py-3">Средний заголовок</h3>
             </div>
         </div>
+
+
+        <a aria-label="scroll bottom" x-data @click="$scroll('#home')" href="#" class="icon icon-lg icon-arrow-b text-white text-4xl animate-bounce icon-transparent icon-hero">
+        </a>
+
+
     </div>
 </div>
 
@@ -91,11 +97,10 @@
 </div>
 <div class="container mx-auto">
     <div class="row">
-        <div>
-            <div class="m-2 icon icon-lg icon-primary">
-                <span class="icon-arrow-b text-3xl"></span>
-            </div>
-        </div>
+
+         <span class="m-2 icon icon-lg icon-primary icon-arrow-b text-3xl"></span>
+
+
         <div>
             <div class="m-2 icon icon-lg icon-primary">
                 <span class="icon-arrow-t text-3xl"></span>

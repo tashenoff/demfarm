@@ -763,10 +763,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1332,6 +1328,16 @@ video {
 .navbar-menu__link{
   padding: 1.25rem;
   font-weight: 500;
+}
+
+.icon-hero{
+  position: absolute;
+  bottom: 2.5rem;
+  z-index: 50;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
 }
 
 .content{
